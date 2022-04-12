@@ -142,11 +142,9 @@ varcall:
   # specific to each sample set.
   samplesets:
     all:
-      theta_prior: 0.001
+      theta_prior: 0.03
       aligners:
-        - ngm
         - bwa
-        - bwa_abra2
       callers:
         - mpileup
         - freebayes
@@ -164,7 +162,6 @@ varcall:
   filters:
     default: >
       -i 'QUAL >= 10 &&
-          ALT != "." &&
           INFO/DP >= 5 &&
           INFO/AN >= 3'
 

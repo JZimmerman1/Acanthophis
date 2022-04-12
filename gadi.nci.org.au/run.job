@@ -8,13 +8,13 @@
 #PBS -l storage=scratch/xe2+gdata/xe2
 #PBS -j oe
 #PBS -o data/log/
-#PBS -M pbs@kdmurray.id.au
+#PBS -M jzimmerm@myune.edu.au
 #PBS -m abe
 #PBS -P xe2
-#PBS -N PANEUCACANTH
+#PBS -N JZACANTH
 
 
-conda activate paneuc-acanthophis
+conda activate jz-acanthophis
 
 set -xeuo pipefail
 
@@ -28,7 +28,7 @@ if [ "$SELFSUB" == "yes" ]
 then
     NEXT=$(qsub -v "TARGET=${TARGET},SNAKEFILE=${SNAKEFILE},SELFSUB=${SELFSUB},RMTEMP=${RMTEMP}" \
                 -W depend=afterany:$PBS_JOBID -N ${PBS_JOBNAME:-RUNEMEL}             \
-		run.job)
+		gadi.nci.org.au/run.job)
 fi
 
 if [ "${RMTEMP}" == yes ]
