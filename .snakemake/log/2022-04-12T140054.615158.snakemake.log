@@ -1,0 +1,6 @@
+FileNotFoundError in line 4 of /g/data/xe2/projects/Josh_Z_Acanthophis/jzworkspace/Snakefile:
+[Errno 2] No such file or directory: 'rawdata/rl2s.tsv'
+  File "/g/data/xe2/projects/Josh_Z_Acanthophis/jzworkspace/Snakefile", line 4, in <module>
+  File "/g/data/xe2/projects/Josh_Z_Acanthophis/conda/mambaforge3/envs/jz-acanthophis/lib/python3.9/site-packages/acanthophis/__init__.py", line 76, in populate_metadata
+  File "/g/data/xe2/projects/Josh_Z_Acanthophis/conda/mambaforge3/envs/jz-acanthophis/lib/python3.9/site-packages/acanthophis/__init__.py", line 137, in make_runlib2samp
+  File "/g/data/xe2/projects/Josh_Z_Acanthophis/conda/mambaforge3/envs/jz-acanthophis/lib/python3.9/site-packages/acanthophis/__init__.py", line 126, in _iter_metadata
